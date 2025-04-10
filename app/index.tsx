@@ -14,7 +14,7 @@ export default function Index() {
         if (hasSeenOnboarding === null) {
           router.replace("/onboarding");
         } else {
-          router.replace("/(tabs)/home");
+          router.replace("/tabs");
         }
       } catch (error) {
         console.error("Lỗi khi kiểm tra onboarding:", error);

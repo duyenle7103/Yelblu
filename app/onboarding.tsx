@@ -13,7 +13,7 @@ export default function Onboarding() {
     const handleFinishOnboarding = async () => {
         try {
             await AsyncStorage.setItem("hasSeenOnboarding", "true");
-            router.replace("/(tabs)/home");
+            router.replace("/tabs");
         } catch (error) {
             console.error("Lỗi khi lưu trạng thái onboarding:", error);
         }
